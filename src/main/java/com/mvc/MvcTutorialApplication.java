@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
-@ComponentScan(value = {"com.mvc", "com.mvc.controllers", "com.mvc.model"})
+@ComponentScan(value = {"com.mvc"})
 public class MvcTutorialApplication {
 
 	public static void main(String[] args) {
