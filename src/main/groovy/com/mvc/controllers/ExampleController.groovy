@@ -3,6 +3,7 @@ package com.mvc.controllers
 import com.mvc.model.Person
 import com.mvc.services.PersonService
 import com.mvc.validators.PersonValidator
+import org.bouncycastle.cert.ocsp.Req
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.ui.Model
 import org.springframework.validation.BindingResult
@@ -39,7 +40,7 @@ class ExampleController {
         if(bindingResult.hasErrors()) {
             println 'The person contain an error'
         }
-        throw new RuntimeException('There was an error')
+        //throw new RuntimeException('There was an error')
         return person
     }
 
@@ -66,9 +67,9 @@ class ExampleController {
 
     }
 
-    @InitBinder
-    public void initBinder(WebDataBinder binder) {
-        binder.addValidators(new PersonValidator())
+    @RequestMapping(value = '/name/{userId}', produces = 'application/json', method = RequestMethod.GET)
+    public Person withUserId(@PathVariable('userId') Person person) {
+        return person
     }
 
 

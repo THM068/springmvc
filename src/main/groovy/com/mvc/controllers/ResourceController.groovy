@@ -16,7 +16,6 @@ class ResourceController  {
 
     @RequestMapping(value="/", method = RequestMethod.GET)
     public String index() {
-        throw new RuntimeException('Help me I am an error')
         return 'resource/index'
     }
 

@@ -9,6 +9,6 @@ import groovy.transform.EqualsAndHashCode
 class Person {
 
     String name
-
+    Date birthday
 
 }

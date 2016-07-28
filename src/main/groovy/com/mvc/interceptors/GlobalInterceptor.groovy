@@ -10,12 +10,12 @@ import javax.servlet.http.HttpServletResponse
  */
 class GlobalInterceptor extends HandlerInterceptorAdapter{
 
-    @Override
-    public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
-            throws Exception {
-        println 'I have been called ...'
-        request.setAttribute('currentDate', '27/07/2016')
-        return true;
-    }
+//    @Override
+//    public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler)
+//            throws Exception {
+//        println 'I have been called ...'
+//        request.setAttribute('currentDate', '27/07/2016')
+//        return true;
+//    }
 
 }

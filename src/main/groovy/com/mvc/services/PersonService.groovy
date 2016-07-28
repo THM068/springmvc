@@ -10,6 +10,10 @@ import org.springframework.stereotype.Component
 class PersonService {
 
     public List<Person> findAll() {
-        return []
+        return [new Person(name: 'thomas'), new Person(name: 'Kerrie')]
+    }
+
+    public Person find(String id) {
+        return new Person(name: 'Thando MAfela', birthday: new Date())
     }
 }

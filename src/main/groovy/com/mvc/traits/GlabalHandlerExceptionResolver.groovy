@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse
 /**
  * Created by tm1c14 on 27/07/2016.
  */
-@Component
+//@Component
 class GlabalHandlerExceptionResolver implements HandlerExceptionResolver{
     @Override
     ModelAndView resolveException(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex) {
